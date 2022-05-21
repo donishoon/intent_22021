@@ -1,5 +1,6 @@
 package com.nepplus.intent_22021
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -11,7 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         btnMove.setOnClickListener {
 
-//
+//            다른 화면으로 이동하기
+
+            val myintent = Intent (this, DoonActivity::class.java)
+            startActivity(myintent)
 
         }
 
