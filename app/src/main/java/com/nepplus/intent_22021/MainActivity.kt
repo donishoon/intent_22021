@@ -17,6 +17,13 @@ class MainActivity : AppCompatActivity() {
             val myintent = Intent (this, DoonActivity::class.java)
             startActivity(myintent)
 
+            btnEditNickname.setOnClickListener {
+                val myIntent = Intent(this, EditNicknameActivity::class.java)
+
+                startActivityForResult(myIntent, 1000 )
+
+            }
+
         }
 
         btnSend.setOnClickListener {
@@ -32,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(myIntent)
         }
+
+
 
     }
 
