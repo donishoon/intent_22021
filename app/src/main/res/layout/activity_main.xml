@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center"
     android:padding="20dp" >
 
     <TextView
@@ -16,19 +15,49 @@
 
     <Button
         android:id="@+id/btnMove"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="다른화면으로 이동하기" />
 
     <EditText
+        android:id="@+id/edtMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="아무 말이나 입력"/>
 
     <Button
+        android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="메세지를 다른 화면에서 보여주기"
+        android:text="메세지를 다른 화면에서 보여주기" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임 관리"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="dony"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="변경하기"/>
+
+    </LinearLayout>
 
 
 
